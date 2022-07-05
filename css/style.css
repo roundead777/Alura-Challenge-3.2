@@ -1,0 +1,23 @@
+:root {
+    --cor-de-fundo: #FFFF;
+    --cor-placeholder: #A2A2A2;
+    --cor-fundo-inputs: #F5F5F5;
+    --cor-link: #2A7AE4;
+    --cor-link-hover: #D4E4FA;
+    --cor-btn-hover: #5595E9;
+    --cor-fundo-contato: #EAF2FD;
+    --cor-texto: #000000;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+a { 
+text-decoration: none;
+margin: 0;
+padding: 0;
+}

@@ -1,0 +1,182 @@
+/*mobile first*/
+
+.cabecalho {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    background-color: var(--cor-de-fundo);
+}
+
+.cabecalho__img {
+    width: 125px;
+}
+
+.cabecalho__box {
+    width: 125px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pesquisa-mob {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+}
+.pesquisaM__input {
+    display: none;
+    text-decoration: none;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+.pesquisaM__btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 10%;
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/searchM.png');
+    background-repeat: no-repeat;  
+    background-color: transparent;  
+}
+.pesquisaM__btn:hover {
+    cursor:pointer;
+}
+.pesquisa {
+    padding: 8px 16px;
+    display: none;
+    align-items: center;
+    border-radius: 28px;
+    background-color: var(--cor-fundo-inputs);
+}
+.pesquisa__input {
+    display: none;
+    text-decoration: none;
+    
+    border: none;
+    background-color: var(--cor-fundo-inputs);
+}
+
+.pesquisa__input::placeholder {
+    color: var(--cor-placeholder);
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.pesquisa__input:focus {
+    box-shadow: 0;
+    outline: 0;
+} 
+
+.pesquisa__btn {
+    display: none;
+    border: none;
+    border-radius: 25%;
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/search-icon.png');
+    background-repeat: no-repeat;
+    background-color:var(--cor-fundo-inputs);
+}
+.pesquisa__btn:hover {
+    cursor:pointer;
+}
+
+.cabecalho__btn {
+    font-size: 14px;
+    font-weight: 600;
+    color:var(--cor-link);
+    background-color: var(--cor-de-fundo);
+    border-style:solid;
+    border-color: var(--cor-link);
+    width: 125px;
+    height: 45px;
+    cursor:pointer;
+    transition: all 1s;
+}
+
+.cabecalho__btn:hover {
+    background-color: var(--cor-link-hover);
+}
+
+
+@media screen and (min-width: 768px){
+
+    .cabecalho {
+        padding: 0 32px;
+        height: 80px;
+    }
+    .cabecalho__img {
+        margin-right: 16px;
+    }
+    .cabecalho__box {
+        width: 400px;
+        height: 40px;
+    }
+    .pesquisa-mob, .pesquisaM__btn {
+        display: none
+    }
+    .pesquisa, .pesquisa__input, .pesquisa__btn{
+        display: flex;
+    }
+    .pesquisa {
+        width: 250px;
+    }
+
+    .pesquisa__input {
+        font-size: 20px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .cabecalho__btn {
+        font-weight: 600;
+        width: 170px;
+        height: 45px;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+    .cabecalho {
+        padding: 0 156px;
+        height: 115px;
+    }
+    .cabecalho__img {
+        width: 250px;
+        margin-right: 32px;
+    }
+    .cabecalho__box {
+        width: 400px;
+        height: 50px;
+    }
+    .pesquisa-mob, .pesquisaM__btn {
+        display: none
+    }
+    .pesquisa, .pesquisa__input, .pesquisa__btn{
+        display: flex;
+    }
+    .pesquisa {
+        width: 350px;
+    }
+    .pesquisa__input {
+        font-size: 24px;
+        width: 286px;
+        height: 40px;
+    }
+    .cabecalho__btn {
+        font-size: 16px;
+        font-weight: 400;
+        width: 200px;
+        height: 60px;
+    }
+}

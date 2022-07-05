@@ -1,0 +1,112 @@
+.produtos__container {
+    margin: 0;
+    padding: 16px 16px;
+}
+
+.produtos__container.star-wars{
+    padding: 16px 16px;
+}
+
+.produtos__container.diversos {
+    padding: 16px;
+}
+
+.produtos__cabecalho {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtos__titulo {
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 700;
+}
+
+.produto__link {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--cor-link);
+}
+
+.produtos__lista {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.produto__box {
+    width: 160px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.produto__box:nth-child(6n) {
+    margin-right: 0;
+}
+
+.produto__box:nth-child(6n+1) {
+    margin-left: 0;
+}
+
+.produto__titulo{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.produto__preco {
+    font-size: 16px;
+    font-weight: 700;
+
+}
+@media screen and (min-width: 768px) {
+
+    .produtos__container {
+        margin: 0;
+        padding: 16px 32px;
+    }
+
+   .produtos__container.star-wars{
+    padding: 32px 32px 16px 32px;
+    }
+
+    .produtos__container.diversos {
+        padding: 16px 32px 16px 32px;
+    }
+
+    .produtos__titulo {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .produto__box:nth-child(n+5) {
+        display:none;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .produtos__container {
+        margin: 0;
+        padding: 32px 152px;
+    }
+    
+    .produtos__container.star-wars{
+        padding: 64px 152px 32px 152px;
+    }
+    
+    .produtos__container.diversos {
+        padding: 32px 152px 64px 152px;
+    }
+
+    .produto__box:nth-child(n+5) {
+        display:flex;
+    }
+
+
+}
