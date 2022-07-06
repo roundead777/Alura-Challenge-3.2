@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>AluraGeek - Login</title>
+</head>
+<body>
+
+<header class="cabecalho">
+    <section class="cabecalho__box">
+        <div class="cabecalho__logo">
+            <a href="index.html"><img class="cabecalho__img" src="img/logo.svg" alt="AluraGeek"></a>
+        </div>
+        <div class="pesquisa">
+            <input class="pesquisa__input" type="text" placeholder="O que deseja encontrar?">
+            <button class="pesquisa__btn" type="submit"></button>
+        </div>
+    </section>
+    <div class="pesquisa-mob">
+        <input class="pesquisaM__input" type="text">
+        <button class="pesquisaM__btn" type="submit"></button>
+    </div>
+</header>
+
+<section class="login__container">
+<form class="form__login" action="#">
+    <div class="form__box">
+        <h2 class="form__titulo">Iniciar Sessão</h2>
+        <input class="form__input" id="email" type="email" placeholder="Escreva seu email" autocomplete="off" required>
+        <input class="form__input" id="password" type="password" placeholder="Escreva sua senha" required>
+        <button class="form__btn" id="login-btn" type="submit">Entrar</button>
+    </div>
+</form>
+
+</section>
+<footer class="rodape">
+    <section class="footer__container">
+        <div class="rodape__img__box">
+            <img class="rodape__img" src="img/logo.svg" alt="AluraGeek">
+        </div>
+        <nav class="lista__container">
+            <ul class="rodape__lista">
+                <img class="rodape__img__lista" src="img/logo.svg" alt="AluraGeek">
+                <li><a class="rodape__link" href="#">Quem somos</a></li>
+                <li><a class="rodape__link" href="#">Politica de privacidade</a></li>
+                <li><a class="rodape__link" href="#">Programa de fidelidade</a></li>
+                <li><a class="rodape__link" href="#">Nossas lojas</a></li>
+                <li><a class="rodape__link" href="#">Quero ser franqueado</a></li>
+                <li><a class="rodape__link" href="#">Anuncie aqui</a></li>
+            </ul>
+        </nav>
+        <form class="formulario" action="#">
+            <h2 class="formulario__titulo">Fale conosco</h2>
+            <div class="formulario__box">
+                <input class="formulario__input" id="nome" type="text" placeholder="Nome" autocomplete="off" required>
+            </div>
+            <div class="formulario__inputLabel">
+                <label class="formulario__label" for="mensagem"></label>
+                <textarea class="formulario__textArea" id="mensagem" type="text" placeholder="Escreva sua mensagem" autocomplete="off" required></textarea>
+            </div>
+            <input class="formulario__btn" value="Enviar mensagem" type="submit">
+        </form>
+    </section>
+</footer>
+<div class="creditos">
+    <p>Desenvolvido por Rosalvo Menezes</p>
+    <p>2022</p> 
+</div>
+    
+</body>
+</html>
