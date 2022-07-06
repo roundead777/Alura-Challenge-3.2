@@ -51,12 +51,13 @@
 
 .formulario {
     width:340px;
-    height: 342px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     padding:16px 0;
+    margin-bottom: 16px;
 }
 
 .formulario__titulo {
