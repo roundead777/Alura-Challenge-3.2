@@ -33,7 +33,7 @@
 
 .rodape__lista{
     width: 100%;
-    height: 312px;
+    height: 285px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
