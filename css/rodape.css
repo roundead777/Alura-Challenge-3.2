@@ -6,7 +6,6 @@
 .footer__container {
     width: 100%;
     height: 100%;
-    height: 653px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +56,6 @@
     align-items: flex-start;
     justify-content: space-between;
     padding:16px 0;
-    margin-bottom: 16px;
 }
 
 .formulario__titulo {
